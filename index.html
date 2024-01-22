@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<style>
+  .font-manrope{
+    font-family:  "Manrope", sans-serif;
+}
+</style>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/1e67654919.js" crossorigin="anonymous"></script>
+    <!-- tailwind and daisy ui links -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind customization links -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white font-manrope">
+  <header class="container mx-auto md:pt-12 p-6">
+    <!-- navbar -->
+    <nav>
+      <div class="navbar ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-[#FF4240]">Home</a></li>
+              <li><a class="text-[#424247]">About</a></li>
+              <li><a class="text-[#424247]">Pages</a></li>
+              <li><a class="text-[#424247]">Blog</a></li>
+              <li><a class="text-[#424247]">contact</a></li>
+            </ul>
+          </div>
+          <a class="text-3xl text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-semibold">
+            <li><a class="text-[#FF4240]">Home</a></li>
+              <li><a class="text-[#424247]">About</a></li>
+              <li><a class="text-[#424247]">Pages</a></li>
+              <li><a class="text-[#424247]">Blog</a></li>
+              <li><a class="text-[#424247]">contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-6 hidden md:flex" style="color: #89898b;"></i>
+          <a class="btn bg-[#FF4240] text-white border-0">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <section class="container mt-12 lg:relative ">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full rounded-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/slider-2.png" class="w-full rounded-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full ">
+          <img src="./Images/slider-3.png" class="w-full rounded-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        
+      </div>
+      <div class="bg-black p-8 rounded-2xl w-full lg:w-[566px] lg:absolute bottom-9 right-9  ">
+        <h3 class="text-white font-extrabold text-2xl mb-4 ">Meet all the heroes from the field</h3>
+        <p class="text-gray-400 font-light">Learn about all our Achivements and Legends of the game who will be remembered for a life time and so on...</p>
+      </div>
+    </section>
+  </header>
+  <!-- stats section -->
+  <main class="container mx-auto p-6">
+    <section class="my-24">
+      <div class="border-y-2 border-dotted border-gray-300 py-8 text-center mb-12">
+      
+        <h2 class="text-[#131318] font-extrabold text-4xl mb-6">Professional Hockeys Club</h2>
+        <p class="max-w-[607px] mx-auto text-gray-800 font-light">Here are some statistical data on our hockey club. You can get an idea why our club have achived success in recent years.</p>
+      </div>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 justify-center mx-auto items-center text-center">
+        <div class="max-w-[250px] text-center mx-auto
+        ">
+          <div class="radial-progress text-[#FF4240] text-center" style="--value:82;" role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">87%</span></div>
+          <h3 class="text-[#131318] text-lg font-semibold mt-6 mb-4">Prayer Facility</h3>
+          <p>We have separate prayer rooms for different religions.</p>
+        </div>
+        <div class="max-w-[250px] text-center mx-auto">
+          <div class="radial-progress text-[#49D293] " style="--value:90;" role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">95%</span></div>
+          <h3 class="text-[#131318] text-lg font-semibold mt-6 mb-4">Experienced Coach</h3>
+          <p>We ensure that we have the best and the most experienced coaches</p>
+        </div>
+        <div class="max-w-[250px] text-center mx-auto">
+          <div class="radial-progress text-[#FFB546] " style="--value:85;" role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">90%</span></div>
+          <h3 class="text-[#131318] text-lg font-semibold mt-6 mb-4">Senior Player</h3>
+          <p>Opportunities for the younger players to learn from the veteran.</p>
+        </div>
+        <div class="max-w-[250px] text-center mx-auto">
+          <div class="radial-progress text-[#4C8DF1] " style="--value:75;" role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">80%</span></div>
+          <h3 class="text-[#131318] text-lg font-semibold mt-6 mb-4">Training Ground</h3>
+          <p>We have highly organized playground and the best grounds men to take care of the ground.</p>
+        </div>
+      </div>
+    </section>
+    <section class="mb-24 px-6">
+      <div class="border-y-2 border-dotted border-gray-300 py-8 text-center mb-12">
+        <h2 class="text-[#131318] font-extrabold text-4xl mb-6">Program Sections</h2>
+        <p class="max-w-[607px] mx-auto text-gray-800 font-light">Here are the  lists of our programs running right now. Click on the programs to read the detail ed articles</p>
+      </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-white">
+          <div class=" bg-[url('./images/2.png')] bg-cover  items-end flex rounded-2xl">
+            <div class="backdrop-brightness-50 p-8 w-full rounded-2xl">
+              <h2 class="text-[28px] font-extrabold lg:mt-[150px]">Junior Program</h2>
+            <p class="mt-4 mb-6 font-light">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="btn bg-[#FF4240] border-0 text-white">Register Now!</button>
+            </div>
+          </div>
+          <div class=" bg-[url('./images/3.png')] bg-cover   items-end flex rounded-2xl ">
+            <div class="backdrop-brightness-50 p-8 w-full rounded-2xl">
+              <h2 class="text-[28px] font-extrabold lg:mt-[150px]">Teenager Program</h2>
+            <p class="mt-4 mb-6 font-light">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="btn bg-[#FF4240] border-0 text-white">Register Now!</button>
+            </div>
+          </div>
+          <div class=" bg-[url('./images/4.png')] bg-cover   items-end flex lg:col-span-2 rounded-2xl">
+            <div class="backdrop-brightness-50 p-8 w-full rounded-2xl">
+              <h2 class="text-[28px] font-extrabold  lg:mt-[370px]">Professional Program</h2>
+            <p class="mt-4 mb-6 font-light">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="btn bg-[#FF4240] border-0 text-white">Register Now!</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="p-6">
+      <div class="border-y-2 border-dotted border-gray-300 py-8 text-center mb-12">
+        <h2 class="text-[#131318] font-extrabold text-4xl mb-6">Clients Question</h2>
+        <p class="max-w-[607px] mx-auto text-gray-800 font-light">Here are the answers of some frequently asked questions. </p>
+      </div>
+      <div>
+        <div class="hero  ">
+          <div class="hero-content flex-col lg:flex-row p-8 gap-10  border-[1px] border-gray-200 rounded-2xl">
+            <img src="./Images/11.png" class="max-w-sm w-full rounded-lg shadow-2xl " />
+            <div class="max-w-[600px]">
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p>We have the most advanced equipment facilities you could ask for.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p>We have the most experienced and well equipped trainers.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p>We offer private lessons for the best performers.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p>We are offering sky touring for all new players.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p>We accept booking three times a year. Summer, Fall and Winter</p>
+                </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p>Our yearly fee for Junior programs 1000$ per year, for Teenager programs 1500$ per year and our Professional programs cost 2000$ per year.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
