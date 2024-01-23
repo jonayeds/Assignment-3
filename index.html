@@ -358,46 +358,59 @@
         <p class="max-w-[607px] mx-auto text-gray-800 font-light">Here are the  lists of our programs running right now. Click on the programs to read the detail ed articles</p>
       </div>
       <div>
-        <div class="hero min-h-screen ">
-          <div class="hero-content flex-col lg:flex-row">
-           <div class="p-12 border-[1px] border-gray-300 rounded-2xl space-y-8">
-            <div class="p-10 bg-[#BCED6D1A] rounded-xl space-y-4">
+        <div class="hero  ">
+          <div class="hero-content flex-col lg:flex-row p-0">
+           <div class="lg:p-12 p-6 border-[1px] border-gray-300 rounded-2xl space-y-8">
+            <div class="md:pl-10 pl-5 pt-10 bg-[#BCED6D1A] rounded-xl space-y-4">
               <img src="./Images/Group 1171275317.png" alt="">
               <p>Phone Number:</p>
               <h2 class="text-[#131318] text-lg font-extrabold">(+62) 123-321-543</h2>
             </div>
-            <div class="p-10 bg-[#FDDD5F1A] rounded-xl space-y-4">
+            <div class="md:pl-10 pl-5 pt-10 bg-[#FDDD5F1A] rounded-xl space-y-4">
               <img src="./Images/Group 1171275318.png" alt="">
               <p>Email:</p>
-              <h2 class="text-[#131318] text-lg font-extrabold">hockeys@support.com</h2>
+              <h2 class="text-[#131318] md:text-lg text-sm font-extrabold">hockeys@support.com</h2>
             </div>
-            <div class="p-10 bg-[#629CF31A] rounded-xl space-y-4">
+            <div class="md:pl-10 pl-5 pt-10 bg-[#629CF31A] rounded-xl space-y-4">
               <img src="./Images/Group 1171275321.png" alt="">
               <p>Location</p>
               <h2 class="text-[#131318] text-lg font-extrabold">152/1 Mohakhali Wireless Gate</h2>
             </div>
            </div>
-            <div class="card shrink-0 w-full max-w-sm shadow-2xl">
-              <form class="card-body">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Email</span>
-                  </label>
-                  <input type="email" placeholder="email" class="input input-bordered" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Password</span>
-                  </label>
-                  <input type="password" placeholder="password" class="input input-bordered" required />
-                  <label class="label">
-                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                  </label>
-                </div>
-                <div class="form-control mt-6">
-                  <button class="btn btn-primary">Login</button>
-                </div>
-              </form>
+            <div class="grid md:grid-cols-2 grid-cols-1 w-full gap-6 ">
+              <div class="">
+                <label class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Your Name</span>
+                </label>
+                <input type="text" placeholder="Enter Your Full Name" class="input input-bordered bg-[#13131808] border-0 w-full" required />
+              </div>
+              <div>
+                <label class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Your Email</span>
+                </label>
+                <input type="email" placeholder="Enter Your Email" class="input input-bordered bg-[#13131808] border-0 w-full" required />
+              </div>
+              <div>
+                <label class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Subject</span>
+                </label>
+                <input type="text" placeholder="Enter Your Subject" class="input input-bordered bg-[#13131808] border-0 w-full" required />
+              </div>
+              <div>
+                <label class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Phone Number</span>
+                </label>
+                <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered bg-[#13131808] border-0 w-full" required />
+              </div>
+              <div class="md:col-span-2 ">
+                <label class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Message</span>
+                </label>
+                <input type="text" placeholder="Write a Message" class="input input-bordered bg-[#13131808] border-0 w-full h-[370px]  align-top" required />
+              </div>
+              <div class="md:col-span-2">
+                <button class="btn w-full bg-[#FF4240] border-0 text-white">Send Message</button>
+              </div>
             </div>
           </div>
         </div>
